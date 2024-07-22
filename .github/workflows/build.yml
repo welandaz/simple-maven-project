@@ -18,8 +18,11 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
-          cache: maven
       - name: Setup Maven
         uses: gradle/develocity-actions/maven-setup@v1
+        with:
+          job-name: 'Maven Build'
+          add-job-summary: 'true'
+          add-project-id-in-job-summary: 'true'
       - name: Build with Maven
         run: ./mvnw clean package
