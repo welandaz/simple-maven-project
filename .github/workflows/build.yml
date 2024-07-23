@@ -18,5 +18,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
+      - name: Setup Maven
+        uses: gradle/develocity-actions/maven-setup@v1
       - name: Build with Maven
         run: ./mvnw clean package
