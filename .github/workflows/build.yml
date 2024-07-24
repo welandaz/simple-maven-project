@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Setup Maven
-        uses: gradle/develocity-actions/maven-setup@33b7b79f37f9b2ff69ba807207c78cecbe99d665
+        uses: gradle/develocity-actions/maven-setup@c38eed9755bc16d2d7a47923eb756037b90a7d20
         with:
           develocity-url: 'https://scans.gradle.com'
           develocity-injection-enabled: 'true'
