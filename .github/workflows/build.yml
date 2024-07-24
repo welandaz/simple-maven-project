@@ -20,6 +20,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Setup Maven
-        uses: gradle/develocity-actions/maven-setup@v1
+        uses: gradle/develocity-actions/maven-setup@2c027143c8450e4232858e26641ac6f53560e3d7
       - name: Build with Maven
         run: mvn clean package
