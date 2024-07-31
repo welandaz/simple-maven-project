@@ -25,5 +25,7 @@ jobs:
           develocity-url: 'https://scans.gradle.com'
           develocity-injection-enabled: 'true'
           develocity-maven-extension-version: '1.21.6'
+          develocity-allow-untrusted-server: 'true'
+          develocity-capture-file-fingerprints: 'false'
       - name: Build with Maven
         run: mvn clean package
