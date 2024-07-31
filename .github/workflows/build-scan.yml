@@ -14,8 +14,8 @@ jobs:
       pull-requests: write
     steps:
       - name: Setup Build Scan link capture
-        uses: gradle/develocity-actions/maven-setup@welandaz/develocity-maven-injection
+        uses: gradle/develocity-actions/maven-setup@welandaz/enforce-url
       - name: Publish Build Scans
-        uses: gradle/develocity-actions/maven-publish-build-scan@welandaz/develocity-maven-injection
+        uses: gradle/develocity-actions/maven-publish-build-scan@welandaz/enforce-url
         with:
           develocity-url: 'https://scans.gradle.com'
