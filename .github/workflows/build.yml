@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Setup Maven
-        uses: gradle/develocity-actions/maven-setup@welandaz/enforce-url
+        uses: gradle/develocity-actions/maven-setup@welandaz/detect-extension-enforce-custom-coord
         with:
           develocity-url: 'https://scans.gradle.com'
           develocity-injection-enabled: 'true'

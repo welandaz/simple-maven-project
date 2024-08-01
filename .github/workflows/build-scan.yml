@@ -14,8 +14,8 @@ jobs:
       pull-requests: write
     steps:
       - name: Setup Build Scan link capture
-        uses: gradle/develocity-actions/maven-setup@welandaz/enforce-url
+        uses: gradle/develocity-actions/maven-setup@welandaz/detect-extension-enforce-custom-coord
       - name: Publish Build Scans
-        uses: gradle/develocity-actions/maven-publish-build-scan@welandaz/enforce-url
+        uses: gradle/develocity-actions/maven-publish-build-scan@welandaz/detect-extension-enforce-custom-coord
         with:
           develocity-url: 'https://scans.gradle.com'
